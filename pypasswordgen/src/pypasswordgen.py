@@ -26,9 +26,9 @@ def generate_password(length, upper):
     Generate a random password
     """
     if upper:
-        chars = string.ascii_letters + string.digits + string.punctuation
+        chars = string.ascii_letters
     else:
-        chars = string.ascii_lowercase + string.digits
+        chars = string.ascii_lowercase
     return ''.join(random.choice(chars) for _ in range(length))
 
 
