@@ -38,18 +38,18 @@ def generate_password(length, upper, digit, punctuation):
     Generate a random password
     """
     chars = ""
-    if upper==2:
+    if upper == 2:
         chars += string.ascii_uppercase
         return ''.join(random.choice(chars) for _ in range(length))
 
-    if digit==2:
+    if digit == 2:
         chars += string.digits
         return ''.join(random.choice(chars) for _ in range(length))
 
-    if punctuation==2:
-        chars += string.punctuation 
+    if punctuation == 2:
+        chars += string.punctuation
         return ''.join(random.choice(chars) for _ in range(length))
-   
+
     if upper:
         chars += string.ascii_uppercase
     if digit:
