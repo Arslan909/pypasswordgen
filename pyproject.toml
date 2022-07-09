@@ -1,0 +1,20 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools"]
+
+[project]
+authors = [
+  {name = "Muhammad Arslan", email = "Arslanswl909@gmail.com"},
+  {name = "Taimoor Shahid", email = "mtsprogrammer999@gmail.com"},
+  {name = "Syed Hassan Askri", email = "hassanrandomz@gmail.com"},
+]
+description = "A pyton based random password generator"
+homepage = "https://github.com/Arslan909/pypasswordgen"
+keywords = ["password", "generator", "random", "pyton"]
+license = {file = "LICENSE"}
+name = "pypasswordgen"
+version = "1.0.0"
+readme = "README.md"
+
+[project.scripts]
+pypasswordgen = "pypasswordgen.py:generate_password"
