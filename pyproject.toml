@@ -1,22 +1,24 @@
-[build-system]
-build-backend = "setuptools.build_meta"
-requires = ["setuptools"]
-
-[project]
+[tool.poetry]
 authors = [
-  {name = "Muhammad Arslan", email = "Arslanswl909@gmail.com"},
-  {name = "Taimoor Shahid", email = "mtsprogrammer999@gmail.com"},
-  {name = "Syed Hassan Askri", email = "hassanrandomz@gmail.com"},
+  "Muhammad Arslan <Arslanswl909@gmail.com>",
 ]
-description = "A pyton based random password generator"
-keywords = ["password", "generator", "random", "pyton"]
-license = {file = "LICENSE"}
+
+description = "A python based random password generator"
+homepage = "https://github.com/Arslan909/pypasswordgen"
+keywords = ["password", "generator", "random"]
+license = "WTFPL"
 name = "pypasswordgen"
-version = "1.0.0"
 readme = "README.md"
+version = "1.0.1"
 
-[project.scripts]
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.poetry.scripts]
 pypasswordgen = "pypasswordgen:generate_password"
-
-[project.urls]
-Homepage = "https://github.com/Arslan909/pypasswordgen"
