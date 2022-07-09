@@ -79,20 +79,17 @@ def generate_password(length, number, output, upper, digit, punctuation):
         with open(output.name, "w") as f:
             for password in passwords:
                 f.write(password + "\n")
-        exit(0)
 
-    return "\n".join(passwords)
+    print("\n".join(passwords))
 
 
 if __name__ == '__main__':
 
-    print(
-        generate_password(
-            args.length,
-            args.number,
-            args.output,
-            args.upper,
-            args.digit,
-            args.punctuation,
-        ))
-    exit(0)
+    generate_password(
+        args.length,
+        args.number,
+        args.output,
+        args.upper,
+        args.digit,
+        args.punctuation,
+    )
