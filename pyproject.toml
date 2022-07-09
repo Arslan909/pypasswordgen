@@ -16,7 +16,7 @@ version = "1.0.0"
 readme = "README.md"
 
 [project.scripts]
-pypasswordgen = "pypasswordgen.py:generate_password"
+pypasswordgen = "pypasswordgen:generate_password"
 
 [project.urls]
 Homepage = "https://github.com/Arslan909/pypasswordgen"
